@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Event Handling and Interactive Elements</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>🚀 JavaScript Interactive Elements</h1>
+
+  <!-- Event Handling Demo -->
+  <section>
+    <h2> Event Handling</h2>
+    <button id="clickBtn">Click Me</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Interactive Elements -->
+  <section>
+    <h2> Interactive Elements</h2>
+
+    <!-- Dark Mode Toggle -->
+    <button id="toggleTheme">🌙 Toggle Dark Mode</button>
+
+    <!-- Counter -->
+    <div class="counter">
+      <p>Count: <span id="count">0</span></p>
+      <button id="increase">➕ Increase</button>
+      <button id="reset">🔄 Reset</button>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+      <button class="faq-toggle">What is JavaScript?</button>
+      <p class="faq-answer">JJavaScript is a high-level, interpreted programming language 
+        that enables developers to add interactivity, dynamic behavior, and logic to web pages. 
+        It runs directly in the browser, allowing websites to respond to user actions,
+        manipulate content, validate forms, fetch data from servers, and create engaging applications.
+        Alongside HTML (structure) and CSS (styling), JavaScript forms the core technology of the web,
+        powering everything from simple animations to complex web apps, games, and server-side applications
+        through environments like Node.js.!</p>
+    </div>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2> Form Validation</h2>
+    <form id="signupForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+      <small id="nameError" class="error"></small><br>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <small id="emailError" class="error"></small><br>
+
+      <label>Password:</label>
+      <input type="password" id="password" required>
+      <small id="passwordError" class="error"></small><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="success" class="success"></p>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
